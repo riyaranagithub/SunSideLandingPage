@@ -1,3 +1,24 @@
-.heroheight{
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+.heroimage{
+   width: 100%;
    height: calc(100vh - 94px);
+}
+.herotext{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: white;
+   font-family: 'DM Serif Text", serif';
+   font-size: 4rem;
+   font-weight: bolder;
+}
+.heroarrow{
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: white;
 }
