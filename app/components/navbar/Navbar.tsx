@@ -1,35 +1,59 @@
-import React from 'react'
-import styles from './Navbar.module.css'
+"use client";
+
+import React, { useState } from "react";
+import styles from "./Navbar.module.css";
 
 function Navbar() {
+  const [active, setActive] = useState(false);
+
   return (
-    <>
-    <nav className="navbar bg-primary text-white shadow-md mint">
-  <div className="container mx-auto flex justify-between items-center py-4 px-6">
+    <nav className={styles.navbar}>
+      <div className={styles.container}>
+        <div className={styles["navbar-logo"]}>sunnyside</div>
+        <div
+          className={`${styles["links"]}`}
+        >
+          <a href="#about" className={styles["nav-link"]}>
+            About
+          </a>
+          <a href="#services" className={styles["nav-link"]}>
+            Services
+          </a>
+          <a href="#projects" className={styles["nav-link"]}>
+            Projects
+          </a>
+          <button className={styles.button}>Contact</button>
+        </div>
+        {/* Hamburger Menu */}
+        <div
+          className={styles["navbar-hamburger"]}
+          onClick={() => setActive((prev) => !prev)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-    <div className="navbar-logo text-2xl font-extrabold">
-      sunnyside
-    </div>
-
-    
-    <div className="navbar-links hidden md:flex gap-6 items-center">
-      <a href="#about" className="nav-link hover:text-secondary transition">About</a>
-      <a href="#services" className="nav-link hover:text-secondary transition">Services</a>
-        <a href="#projects" className="nav-link hover:text-secondary transition">Projects</a>
-        <button className={styles.button}>Contact</button>
-    </div>
-
-    
-    <div className="navbar-hamburger md:hidden cursor-pointer">
-      <span className="block w-6 h-1 bg-white mb-1"></span>
-      <span className="block w-6 h-1 bg-white mb-1"></span>
-      <span className="block w-6 h-1 bg-white"></span>
-    </div>
-  </div>
-</nav>
-
-    </>
-  )
+        {/* Links */}
+        <div
+          className={` ${
+            active ? styles.navbarMd : "hidden"
+          }`}
+        >
+          <a href="#about" className={styles["nav-link"]}>
+            About
+          </a>
+          <a href="#services" className={styles["nav-link"]}>
+            Services
+          </a>
+          <a href="#projects" className={styles["nav-link"]}>
+            Projects
+          </a>
+          <button className={styles.button}>Contact</button>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

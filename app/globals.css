@@ -6,8 +6,30 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  
+  -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.mint{
-  background-color: #7BD3EA;
+
+:root {
+  --barlow-font: "Barlow", sans-serif;
+  --fraunces-font: "Fraunces", serif;
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --header-bg: #3ebfff;
+  --footer-bg: #8ed0c4;
+  --container-bg: #fffbf8;
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-drak-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
 }
+

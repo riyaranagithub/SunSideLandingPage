@@ -4,15 +4,14 @@ import styles from './Hero.module.css'
 
 function HeroSection() {
   return (
-    <>
+    <div className={styles.hero}>
     <div className={styles.herotext}>
-      <h1>WE ARE CREATIVES</h1>
+      <h1 className={styles.text}>WE ARE CREATIVES</h1>
     </div>
     <div className={styles.heroarrow}>
       <img src="/sunnyside-agency-landing-page-main/images/icon-arrow-down.svg" alt="arrow" />
     </div>
-    <img src="/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg" alt="heroimage" className={styles.heroimage}/>
-    </>
+  </div>
   )
 }
 
