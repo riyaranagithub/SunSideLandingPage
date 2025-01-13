@@ -12,8 +12,9 @@ function CardSection() {
               We are a full-service creative agency specializing in helping
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
-              <a>LEARN MORE</a>
+              
             </p>
+            <a>LEARN MORE</a>
           </div>
 
           <div
@@ -31,8 +32,9 @@ function CardSection() {
               Using a collaborative formula of designers, researchers,
               photographers, videographers, and copywriters, we’ll build and
               extend your brand in digital places.
-              <a>LEARN MORE</a>
-            </p>
+             
+            </p> 
+            <a>LEARN MORE</a>
           </div>
         </div>
         <div className={styles.card3}>
@@ -58,7 +60,6 @@ function CardSection() {
             </section>
           </section>
         </div>
-       
       </div>
     </>
   );
